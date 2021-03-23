@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>{{titulo}}</title>
+    </head>
+    <body>
+        <h1>Fornecedores</h1>
+        <table border="1">
+        {% for fornecedor in fornecedores %}
+            <tr>
+                <td>{{fornecedor.id}}</td>
+                <td>{{fornecedor.nome}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </body>
+</html>
